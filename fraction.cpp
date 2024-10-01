@@ -31,7 +31,7 @@ bool Fraction::equals(const Fraction& f) const
     return numerator==f.numerator && denominator==f.denominator;
 }
 
-Fraction Fraction::pow(const int n) const
+Fraction Fraction::pow(unsigned int n) const
 {
     Fraction frac = Fraction(1,1);
 

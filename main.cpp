@@ -40,7 +40,8 @@ bool str_eval(const std::string& title, const std::string& f, const std::string&
 bool test_add(){
     bool test = true;
     //Test 1
-    if (!eval("Test 0-1, Addition", Fraction(1,2).add(Fraction(1,4)), Fraction(3,4))) {test = false;}
+    const Fraction a(1,2);
+    if (!eval("Test 0-1, Addition", a.add(Fraction(1,4)), Fraction(3,4))) {test = false;}
     //Test 2
     if (!eval("Test 0-2, Addition", Fraction(5,6).add(Fraction(1,1)), Fraction(11,6))) {test = false;}
     return test;

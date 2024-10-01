@@ -23,9 +23,10 @@ public:
     /* --Division-- */
     Fraction div(const Fraction& f) const;
     /* --Potenzieren-- */
-    Fraction pow(const int n) const;
+    Fraction pow(unsigned int n) const;
     /* --In Zeichenkette umwandeln. */
     std::string toString() const;
+
 private:
     int numerator;      /* --Zaehler. */
     int denominator;    /* --Nenner. */
